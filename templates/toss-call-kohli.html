@@ -1,56 +1,85 @@
-{% extends 'base.html'%}
-{% block head %}
-<title>hello hello toss the coin you will</title>
+<!DOCTYPE html>
+<html lang="en">
 
-{% endblock %}
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>kohli is calling toss</title>
+</head>
 
-{%block body%}
-<div style="text-align:center">
-    Host: The day is here, the world test championship final we all have been looking forward is finaly going to begin,
-    we have got the two captains, Kane you have
-    got
-    the coin, would like to flick.
-</div>
-<style>
-    .button1 {
-        padding-left: 500%;
-    }
-
-    .button2 {
-        padding-left: 900%;
-    }
-</style>
-<table>
-
-    <tr>
+<body>
+    <div class="container">
         <div style="text-align:center">
-            <img src="../static/williamson-tossing-coin.jpg" height="320" />
+            Host: The day is here, the world test championship final we all have been looking forward is finaly going to
+            begin,
+            we have got the two captains, Kane you have
+            got
+            the coin, would like to flick.
         </div>
-    </tr>
+        <style>
+            .button1 {
+                padding-left: 600%;
+            }
 
-    <tr>
+            .button2 {
+                padding-left: 1200%;
+            }
+        </style>
+        <table>
 
-        <td>
+            <tr>
+                <div style="text-align:center">
+                    <img src="../static/williamson-tossing-coin.jpg" height="320" />
+                </div>
+            </tr>
 
-            <div class="button1">
-                <form action="/kohlicalls/heads"><input class="bbt" type="submit" value="Heads" /></form>
-            </div>
+            <tr>
 
+                <td>
 
-        </td>
-        <td>
-
-            <div class="button2">
-                <form action="/kohlicalls/tails"><input type="submit" value="Tails" /></form>
-            </div>
-
-
-
-    </tr>
-
-
-</table>
+                    <div class="button1">
+                        <a href="kohliheads.html"><button>Heads</a>
+                    </div>
 
 
+                </td>
+                <td>
 
-{%endblock%}
+                    <div class="button2">
+
+                        <a href="kohlitails.html"><button>Tails</a>
+                    </div>
+
+
+
+            </tr>
+
+
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="container" style="text-align:center">
+            <span class="text-muted">Check out the code for the qiskit implementation <a
+                    href="https://github.com/SammithSB/virat-and-toss/blob/main/Quantum%20teleportation.ipynb"
+                    target="_blank">here</a></span> <span class="text-muted">and
+                link to the repo is <a href="https://github.com/SammithSB/virat-and-toss"
+                    target="_blank">here</a>.</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
