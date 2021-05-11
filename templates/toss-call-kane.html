@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% block head %}
+<title>hello hello toss the coin you will</title>
+
+{% endblock %}
+
+{%block body%}
+<div style="text-align:center">
+    Host: The day is here, the world test championship final we all have been looking forward is finaly going to begin,
+    we have got the two captains, Virat you have
+    got
+    the coin, would like to flick.
+</div>
+
+<style>
+    .button1 {
+        padding-left: 500%;
+    }
+
+    .button2 {
+        padding-left: 900%;
+    }
+</style>
+<table>
+    <tr>
+        <div style="text-align:center">
+            <img src="../static/kohli-toss-coin.png" height="320" />
+        </div>
+    </tr>
+    <tr>
+
+        <td>
+            <div class="button1">
+                <form action="/kanecalls/heads"><input type="submit" value="Heads" /></form>
+            </div>
+
+        </td>
+        <td>
+            <div class="button2">
+                <form action="/kanecalls/tails"><input type="submit" value="Tails" /></form>
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+
+
+{%endblock%}
