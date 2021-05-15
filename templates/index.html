@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
 
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../static/css/index.css" />
+    </head>
+    <title>hello hello toss the coin you will</title>
 
-</head>
-<title>hello hello toss the coin you will</title>
-
-
-
-<body>
-    <div class="container">
-        Virat has a 45% toss win percentage in tests.
-        <br>
-        In ODIs it is 42%
-        <br>
-        In t20Is it is as low as 40%
-        <br>
-        In IPL its kind of okayish at 47%
-        <br>
-        The thing is he does not win many tosses, in most of the pitches toss does not really affect the game, but there
-        are certain scenarios where it does, also in clutch situations like knockout its better to win the toss than
-        lose it.
-        <br>
-        But how can you win every single toss? I have an idea which is the most stupid, impractical and nonsense idea of
-        all time
-        but
-        its fun though.
-        <br>
-        The idea is we can probably use Quantum Teleportaion. We need to somehow entangle the person who calls the toss
-        and
-        coin
-        and if the person calling it is Virat we will ensure it results in the same outcome and if its the opposition
-        captain we
-        will make the coin give a different outcome.
-        You can check out the Qiskit textbook on <a
-            href="https://qiskit.org/textbook/ch-algorithms/teleportation.html">Quantum
-            Teleportaion</a> its awesome. This is just a fun simulation showing how no matter who is calling it,
-        Virat will always win the toss.
-        <br>
-        Now for me the most important toss Virat is supposed to win is the WTC final one and I do not know who will be
-        calling
-        it, but I will cover for both scenarios. Who is calling the toss?<br>
-        <table>
-            <tr>
-                <td><img src="../static/Virat-Kohli-hundred.jpg" height="320" width="512" /></td>
-                <td><img src="../static/Kane-Williamson.jpg" height="320" width="512" /></td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="text-align:center">
-
-                        <a href="toss-call-kohli.html"><button>Kohli is calling the toss</a>
+    <body>
+        <div class="container">
+            <div class="header">Virat and Toss</div>
+            <div class="by-line">~ Project By Sammith SB</div>
+            <div class="content">
+                <p class="heading-italic">Some Statistics</p>
+                <p class="text">Virat has a toss win percentage of :</p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-header">TEST</div>
+                        <div class="stat-body">45%</div>
                     </div>
-
-                </td>
-                <td>
-                    <div style="text-align:center">
-
-                        <a href="toss-call-kane.html"><button>Kane is calling the toss</a>
+                    <div class="stat">
+                        <div class="stat-header">ODI</div>
+                        <div class="stat-body">42%</div>
                     </div>
-
-                </td>
-            </tr>
-
-        </table>
-
-
-
-    </div>
-
-    <footer class="footer">
-        <div class="container" style="text-align:center">
-            <span class="text-muted">Check out the code for the qiskit implementation <a
-                    href="https://github.com/SammithSB/virat-and-toss/blob/main/Quantum%20teleportation.ipynb"
-                    target="_blank">here</a></span> <span class="text-muted">and
-                link to the repo is <a href="https://github.com/SammithSB/virat-and-toss"
-                    target="_blank">here</a>.</span>
+                    <div class="stat">
+                        <div class="stat-header">T20</div>
+                        <div class="stat-body">40%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-header">IPL</div>
+                        <div class="stat-body">47%</div>
+                    </div>
+                </div>
+                <p class="text">
+                    The thing is he does not win many tosses, in most of the
+                    pitches toss does not really affect the game, but there are
+                    certain scenarios where it does, also in clutch situations
+                    like knockout its better to win the toss than lose it.
+                </p>
+                <p class="text">
+                    But how can you win every single toss? I have an idea which
+                    is the most stupid, impractical and nonsense idea of all
+                    time but its fun though.
+                </p>
+                <div class="heading-italic">The Idea</div>
+                <p class="text">
+                    The idea is we can probably use Quantum Teleportation. We
+                    need to somehow entangle the person who calls the toss and
+                    coin and if the person calling it is Virat we will ensure it
+                    results in the same outcome and if its the opposition
+                    captain we will make the coin give a different outcome. You
+                    can check out the Qiskit textbook on
+                    <a
+                        href="https://qiskit.org/textbook/ch-algorithms/teleportation.html"
+                        class="link"
+                    >
+                        Quantum Teleportation
+                    </a>
+                    its awesome. This is just a fun simulation showing how no
+                    matter who is calling it, Virat will always win the toss.
+                </p>
+                <p class="text">
+                    Now for me the most important toss Virat is supposed to win
+                    is the WTC final one and I do not know who will be calling
+                    it, but I will cover for both scenarios.<br />
+                </p>
+                <div class="heading-italic">Who is calling the toss?</div>
+            </div>
+            <div class="toss-options">
+                <div class="option">
+                    <div class="captain-img">
+                        <img src="../static/Virat-Kohli-hundred.jpg" />
+                    </div>
+                    <a href="toss-call-kohli.html">
+                        <button class="option-btn">
+                            Kohli is calling the toss
+                        </button>
+                    </a>
+                </div>
+                <div class="option">
+                    <div class="captain-img">
+                        <img src="../static/Kane-Williamson.jpg" />
+                    </div>
+                    <a href="toss-call-kane.html">
+                        <button class="option-btn">
+                            Kane is calling the toss
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
 
+        <div class="links">
+            <p class="text-center">
+                Check out the code for the qiskit implementation :
+                <a
+                    href="https://github.com/SammithSB/virat-and-toss/blob/main/Quantum%20teleportation.ipynb"
+                    target="_blank"
+                    >here</a
+                >
+            </p>
+            <br />
+            <p class="text-center">
+                Link to the repo :
+                <a
+                    href="https://github.com/SammithSB/virat-and-toss"
+                    target="_blank"
+                    >Github Repository</a
+                >
+            </p>
+        </div>
+        <footer class="footer"></footer>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
